@@ -10,4 +10,4 @@ The Heroku route that returns the information of lesson information.
 https://moscst3145.herokuapp.com/collection/products
 
 The Heroku route that returns the information of order information.
-https://moscst3145.herokuapp.com/collection/order
+https://moscst3145.herokuapp.com/collection/orders
