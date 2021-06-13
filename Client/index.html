@@ -53,7 +53,6 @@
                     <p>ID : {{ product._id}}</p>
                     <P>Location: {{product.location}}</P>
                     <p>Price: {{product.price}}</p>
-                    <P>Product I.d: {{product.id}}</P>
                     <P>Number of spaces: {{product.availableInventory}}</P>
                     <button v-on:click="decrement_inventory(product); addtocart(product); " v-if="isenable(product)">
                         ADD TO CART</button>
