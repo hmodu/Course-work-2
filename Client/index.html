@@ -39,9 +39,6 @@
         <main>
             <div v-if="showproduct">
 
-
-
-
                 <div v-for="product in products">
 
                     <figure>
@@ -78,17 +75,9 @@
                         <input type="submit">
                 </form>
 
-
-
             </div>
         </main>
     </div>
-
-
-
-
-
-
 
 
     <script type="text/javascript">
@@ -109,10 +98,6 @@
 
                 },
 
-
-
-
-
             },
             methods: {
                 decrement_inventory(product) {
@@ -127,27 +112,14 @@
                     }
                 },
 
-
-
-
-
-
-
-
                 addtocart: function (product) {
                     this.cart.push(product);
                     console.log(product);
                     this.cartID.push(product.id)
                    
 
-
-
                     const newavailableInventory = product.availableInventory;
 
-
-
-
-         
 
                     fetch('https://moscst3145.herokuapp.com/collection/products/' + product._id, {
                         method: 'PUT',
@@ -184,9 +156,6 @@
 
 
                 },
-
-
-
 
 
                 submitForm() {
@@ -253,8 +222,6 @@
                                
                             });
                     });
-
-
 
             }
 
